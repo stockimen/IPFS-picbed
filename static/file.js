@@ -142,7 +142,7 @@ $(document).ready(() => {
                 },
                 success: res => {
                     if (res.Hash) {
-                        const imgSrc = `https://cdn.ipfsscan.io/ipfs/${res.Hash}`;
+                        const imgSrc = `https://i0.img2ipfs.com/ipfs/${res.Hash}`;
                         $('#file').val(null);
                         $(`.${randomClass}`).find('.progress-inner').addClass('success');
                         $(`.${randomClass}`).find('.status-success').show();
@@ -234,11 +234,11 @@ function copyAllLinks() {
     textarea.select();
     document.execCommand('copy');
     document.body.removeChild(textarea);
-    alert('链接已复制到剪贴板');
+    // alert('链接已复制到剪贴板');
 }
 
 function copyToClipboard(obj) {
     obj.select();
     document.execCommand("Copy");
-    alert('链接已复制到剪贴板');
+    // alert('链接已复制到剪贴板');
 }
